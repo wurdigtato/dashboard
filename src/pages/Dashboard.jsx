@@ -122,7 +122,7 @@ const Dashboard = () => {
    const labelMap = {
       timestamp: 'Data e Hora',
       perfil: 'Perfil',
-      funcionalidade: 'Quais funcionalidades você considera essenciais?',
+      funcionalidades: 'Quais funcionalidades você considera essenciais?',
       designIdeal: 'Como você imagina o design do aplicativo?',
       appsReferencia: 'Existem aplicativos de referência que você gosta?',
       marcaCelular: 'Qual a marca do seu celular?',
