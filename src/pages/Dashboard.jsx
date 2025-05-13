@@ -122,12 +122,12 @@ const Dashboard = () => {
    const labelMap = {
       timestamp: 'Data e Hora',
       perfil: 'Perfil',
-      funcionalidade: 'Funcionalidades',
-      designIdeal: 'Quais funcionalidades você considera essenciais? ',
-      appsReferencia: 'Apps de Referência',
-      marcaCelular: 'Marca do Celular',
-      usaPCparaOfertas: 'Usa PC para Ofertas',
-      requisitosExcluir: 'Requisitos a Excluir',
+      funcionalidade: 'Quais funcionalidades você considera essenciais?',
+      designIdeal: 'Como você imagina o design do aplicativo?',
+      appsReferencia: 'Existem aplicativos de referência que você gosta?',
+      marcaCelular: 'Qual a marca do seu celular?',
+      usaPCparaOfertas: 'Utiliza computador pessoal para assistir promoções e oferdas de lojas',
+      requisitosExcluir: 'Há algum requisito que você gostaria de excluir?'
    };
 
    const COLORS = [
