@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2025-05-08 08:52:17",
+    "perfil": "Cliente",
+    "designIdeal": "simples",
+    "appsReferencia": "não",
+    "marcaCelular": "iphone",
+    "usaPCparaOfertas": "instagram",
+    "requisitosExcluir": "não"
+  },
+  {
+    "timestamp": "2025-05-08 11:23:04",
+    "perfil": "Comerciante",
+    "designIdeal": "Colorido",
+    "appsReferencia": "Sim",
+    "marcaCelular": "Samsung",
+    "usaPCparaOfertas": "Sim",
+    "requisitosExcluir": "Nao"
+  },
+  {
+    "timestamp": "2025-05-08 11:30:02",
+    "perfil": "Cliente",
+    "designIdeal": "simples e claro",
+    "appsReferencia": "nao",
+    "marcaCelular": "lg",
+    "usaPCparaOfertas": "nao",
+    "requisitosExcluir": "sem autenticação, google maps integrado mostrando localização dos comercios"
+  },
+  {
+    "timestamp": "2025-05-08 11:38:20",
+    "perfil": "Cliente",
+    "designIdeal": "Simples e acessível . Nenhum vídeo, nenhum áudio ( atenção às pessoas neurodivergentes e PCD)",
+    "appsReferencia": "Olx",
+    "marcaCelular": "Xiaomi",
+    "usaPCparaOfertas": "Sim. Note book Samsung antigo.",
+    "requisitosExcluir": "Sem pedido de CPF e dados pessoais. Criar conta mas sem registro pessoal."
+  },
+  {
+    "timestamp": "2025-05-08 11:40:46",
+    "perfil": "Cliente",
+    "designIdeal": "Colorido",
+    "appsReferencia": "Não lembro.",
+    "marcaCelular": "LG",
+    "usaPCparaOfertas": "Raramente",
+    "requisitosExcluir": "Não"
+  },
+  {
+    "timestamp": "2025-05-08 11:45:18",
+    "perfil": "Cliente",
+    "designIdeal": "Um app simples mas que chame atenção, que seja intuitivo.",
+    "appsReferencia": "OLX, Marketplace do Facebook.",
+    "marcaCelular": "Samsung",
+    "usaPCparaOfertas": "Vejo mais pelo Celular",
+    "requisitosExcluir": "Não há requisitos"
+  },
+  {
+    "timestamp": "2025-05-09 15:08:58",
+    "perfil": "Comerciante",
+    "designIdeal": "Simples, sucinto colorido",
+    "appsReferencia": "Não, na verdade detesto ter que publicar, gosto de produzir",
+    "marcaCelular": "Samsung m32",
+    "usaPCparaOfertas": "Não",
+    "requisitosExcluir": "Sim"
+  },
+  {
+    "timestamp": "2025-05-09 15:26:39",
+    "perfil": "Comerciante",
+    "designIdeal": "Simples mas que chame atenção",
+    "appsReferencia": "Sem opinião formada",
+    "marcaCelular": "Samsung",
+    "usaPCparaOfertas": "Celular",
+    "requisitosExcluir": "Não"
+  },
+  {
+    "timestamp": "2025-05-12 10:49:39",
+    "perfil": "Comerciante",
+    "designIdeal": "Simples",
+    "appsReferencia": "Instagram",
+    "marcaCelular": "Samsung",
+    "usaPCparaOfertas": "Não",
+    "requisitosExcluir": "Já tenho conta"
+  },
+  {
+    "timestamp": "2025-05-12 10:49:52",
+    "perfil": "Comerciante",
+    "designIdeal": "Simples",
+    "appsReferencia": "Instagram",
+    "marcaCelular": "Samsung",
+    "usaPCparaOfertas": "Não",
+    "requisitosExcluir": "Já tenho conta"
+  }
+]
