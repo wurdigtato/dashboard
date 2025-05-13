@@ -2,6 +2,7 @@
   {
     "timestamp": "2025-05-08 08:52:17",
     "perfil": "Cliente",
+    "funcionalidades": "Perfil de comerciante, Publicação de produtos, Publicação de ofertas e promoções, Chat entre usuários, Sistema de avaliação (estrelas/comentários), Integração com redes sociais externas (Instagram/Facebook), Localização dos comércios, Em caso de entrega, GPS",
     "designIdeal": "simples",
     "appsReferencia": "não",
     "marcaCelular": "iphone",
@@ -10,6 +11,7 @@
   },
   {
     "timestamp": "2025-05-08 11:23:04",
+    "funcionalidades": "Perfil de comerciante, Publicação de produtos, Seguidores/seguindo, Integração com redes sociais externas (Instagram/Facebook), Localização dos comércios",
     "perfil": "Comerciante",
     "designIdeal": "Colorido",
     "appsReferencia": "Sim",
@@ -20,6 +22,7 @@
   {
     "timestamp": "2025-05-08 11:30:02",
     "perfil": "Cliente",
+    "funcionalidades":  "Publicação de produtos, Localização dos comércios",
     "designIdeal": "simples e claro",
     "appsReferencia": "nao",
     "marcaCelular": "lg",
@@ -29,6 +32,7 @@
   {
     "timestamp": "2025-05-08 11:38:20",
     "perfil": "Cliente",
+    "funcionalidades": "Perfil de comerciante, Publicação de produtos, Publicação de ofertas e promoções, Sistema de avaliação (estrelas/comentários), Localização dos comércios, Newsletter, Segurança",
     "designIdeal": "Simples e acessível . Nenhum vídeo, nenhum áudio ( atenção às pessoas neurodivergentes e PCD)",
     "appsReferencia": "Olx",
     "marcaCelular": "Xiaomi",
@@ -38,6 +42,7 @@
   {
     "timestamp": "2025-05-08 11:40:46",
     "perfil": "Cliente",
+    "funcionalidades": "Publicação de ofertas e promoções",
     "designIdeal": "Colorido",
     "appsReferencia": "Não lembro.",
     "marcaCelular": "LG",
@@ -47,6 +52,7 @@
   {
     "timestamp": "2025-05-08 11:45:18",
     "perfil": "Cliente",
+    "funcionalidades": "Publicação de produtos, Publicação de ofertas e promoções, Sistema de curtidas/comentários, Chat entre usuários, Sistema de avaliação (estrelas/comentários), Integração com redes sociais externas (Instagram/Facebook), Pagamento integrado (ex: Pix/cartão), Localização dos comércios, Em caso de entrega, GPS",
     "designIdeal": "Um app simples mas que chame atenção, que seja intuitivo.",
     "appsReferencia": "OLX, Marketplace do Facebook.",
     "marcaCelular": "Samsung",
@@ -56,6 +62,7 @@
   {
     "timestamp": "2025-05-09 15:08:58",
     "perfil": "Comerciante",
+    "funcionalidades": "Perfil de comerciante, Publicação de produtos, Publicação de ofertas e promoções, Sistema de curtidas/comentários, Chat entre usuários, Seguidores/seguindo, Sistema de avaliação (estrelas/comentários), Integração com redes sociais externas (Instagram/Facebook), Pagamento integrado (ex: Pix/cartão), Localização dos comércios, Em caso de entrega, GPS",
     "designIdeal": "Simples, sucinto colorido",
     "appsReferencia": "Não, na verdade detesto ter que publicar, gosto de produzir",
     "marcaCelular": "Samsung m32",
@@ -65,6 +72,7 @@
   {
     "timestamp": "2025-05-09 15:26:39",
     "perfil": "Comerciante",
+    "funcionalidades": "Perfil de comerciante, Publicação de produtos, Publicação de ofertas e promoções, Seguidores/seguindo, Sistema de avaliação (estrelas/comentários), Integração com redes sociais externas (Instagram/Facebook), Pagamento integrado (ex: Pix/cartão), Em caso de entrega, GPS",
     "designIdeal": "Simples mas que chame atenção",
     "appsReferencia": "Sem opinião formada",
     "marcaCelular": "Samsung",
@@ -74,6 +82,7 @@
   {
     "timestamp": "2025-05-12 10:49:39",
     "perfil": "Comerciante",
+    "funcionalidades": "Perfil de comerciante, Integração com redes sociais externas (Instagram/Facebook)",
     "designIdeal": "Simples",
     "appsReferencia": "Instagram",
     "marcaCelular": "Samsung",
@@ -83,6 +92,7 @@
   {
     "timestamp": "2025-05-12 10:49:52",
     "perfil": "Comerciante",
+    "funcionalidades": "Perfil de comerciante, Integração com redes sociais externas (Instagram/Facebook)",
     "designIdeal": "Simples",
     "appsReferencia": "Instagram",
     "marcaCelular": "Samsung",

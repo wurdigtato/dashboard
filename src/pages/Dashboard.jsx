@@ -68,18 +68,62 @@ const Dashboard = () => {
 
    const phoneBrandData = Object.entries(
       data.reduce((acc, item) => {
-         const brand = item.marcaCelular?.toLowerCase().trim(); // Normaliza a marca do celular
-         if (brand) {
-            acc[brand] = (acc[brand] || 0) + 1; // Conta a frequência de cada marca
+         // Lista de marcas conhecidas
+         const knownBrands = [
+            'samsung',
+            'iphone',
+            'xiaomi',
+            'motorola',
+            'lg',
+            'nokia',
+            'asus',
+            'sony',
+            'huawei',
+            'google',
+         ];
+
+         const brand = item.marcaCelular?.toLowerCase().trim(); // Normaliza a entrada
+         if (brand && knownBrands.includes(brand)) {
+            // Verifica se a marca está na lista
+            acc[brand] = (acc[brand] || 0) + 1; // Conta a frequência da marca
          }
          return acc;
       }, {})
    ).map(([name, value]) => ({name, value})); // Transforma em array de objetos
 
+   const pcUsageData = Object.entries(
+      data.reduce((acc, item) => {
+         const response = item.usaPCparaOfertas?.toLowerCase().trim(); // Normaliza a resposta
+         if (response === 'sim' || response === 'não') {
+            // Filtra apenas "Sim" ou "Não"
+            acc[response] = (acc[response] || 0) + 1; // Conta a frequência
+         }
+         return acc;
+      }, {})
+   ).map(([name, value]) => ({name, value}));
+
+   const functionalitiesData = Object.entries(
+      data.reduce((acc, item) => {
+         const functionalities = item.funcionalidades
+            ?.split(',') // Divide as funcionalidades por vírgulas
+            .map((func) => func.trim().toLowerCase()); // Remove espaços e converte para minúsculas
+
+         if (functionalities) {
+            functionalities.forEach((func) => {
+               acc[func] = (acc[func] || 0) + 1; // Conta a frequência de cada funcionalidade
+            });
+         }
+
+         return acc;
+      }, {})
+   ).map(([name, value]) => ({name, value}))
+    .sort((a, b) => b.value - a.value); // Transforma em array de objetos
+
    const labelMap = {
       timestamp: 'Data e Hora',
       perfil: 'Perfil',
-      designIdeal: 'Design Ideal',
+      funcionalidade: 'Funcionalidades',
+      designIdeal: 'Quais funcionalidades você considera essenciais? ',
       appsReferencia: 'Apps de Referência',
       marcaCelular: 'Marca do Celular',
       usaPCparaOfertas: 'Usa PC para Ofertas',
@@ -136,8 +180,8 @@ const Dashboard = () => {
          <div className="mt-8 flex flex-wrap gap-8">
             {/* Bar Chart */}
             <div className="p-4 border rounded-lg shadow bg-white">
-               <h2 className="text-lg font-semibold mb-4">
-                  Distribuição por Perfil
+               <h2 className="text-lg text-slate-900 font-semibold mb-4">
+                  Você é?
                </h2>
                <BarChart width={400} height={300} data={barChartData}>
                   <XAxis dataKey="name" />
@@ -150,7 +194,7 @@ const Dashboard = () => {
 
             {/* Pie Chart */}
             <div className="p-4 border rounded-lg shadow bg-white">
-               <h2 className="text-lg font-semibold mb-4">
+               <h2 className="text-lg text-slate-900 font-semibold mb-4">
                   Preferências de Design
                </h2>
                <PieChart width={400} height={300}>
@@ -177,7 +221,7 @@ const Dashboard = () => {
             </div>
             {/* Phone Brand Straight Angle Pie Chart */}
             <div className="p-4 border rounded-lg shadow bg-white">
-               <h2 className="text-lg font-semibold mb-4">
+               <h2 className="text-lg text-slate-900 font-semibold mb-4">
                   Distribuição por Marca de Celular
                </h2>
                <PieChart width={400} height={300}>
@@ -187,12 +231,8 @@ const Dashboard = () => {
                      nameKey="name"
                      cx="50%"
                      cy="50%"
-                     innerRadius={60}
-                     outerRadius={80}
-                     startAngle={180} // Começa no topo (ângulo reto)
-                     endAngle={0} // Termina no lado direito
+                     outerRadius={100}
                      fill="#82ca9d"
-                     paddingAngle={5}
                      label
                   >
                      {phoneBrandData.map((entry, index) => (
@@ -205,6 +245,56 @@ const Dashboard = () => {
                   <Tooltip />
                   <Legend verticalAlign="bottom" height={36} />
                </PieChart>
+               
+            </div>
+            {/* PC Usage Chart */}
+            <div className="p-4 border rounded-lg shadow bg-white">
+               <h2 className="text-lg font-semibold mb-4 text-slate-900">
+                Pessoas que usam PC para procurar ofertas
+               </h2>
+               <PieChart width={400} height={300}>
+                  <Pie
+                     data={pcUsageData}
+                     dataKey="value"
+                     nameKey="name"
+                     cx="50%"
+                     cy="50%"
+                     outerRadius={100}
+                     fill="#8884d8"
+                     label
+                  >
+                     {pcUsageData.map((entry, index) => (
+                        <Cell
+                           key={`cell-${index}`}
+                           fill={COLORS[index % COLORS.length]}
+                        />
+                     ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend verticalAlign="bottom" height={36} />
+               </PieChart>
+            </div>
+            {/* Functionalities Chart */}
+            <div className="p-4 w-full border rounded-lg shadow bg-white text-slate-900">
+               <h2 className="text-lg font-semibold mb-4">
+                  Distribuição de Funcionalidades
+               </h2>
+               <table className="w-full text-left border-collapse">
+                  <thead>
+                     <tr>
+                        <th className="border-b-2 p-2">Funcionalidade</th>
+                        <th className="border-b-2 p-2">Quantidade</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     {functionalitiesData.map((func, index) => (
+                        <tr key={index} className="hover:bg-gray-100">
+                           <td className="border-b p-2 capitalize">{func.name}</td>
+                           <td className="border-b p-2">{func.value}</td>
+                        </tr>
+                     ))}
+                  </tbody>
+               </table>
             </div>
          </div>
       </div>
