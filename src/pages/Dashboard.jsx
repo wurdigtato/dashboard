@@ -13,7 +13,7 @@ import {
 import data from '../data/dados.json';
 
 const Dashboard = () => {
-   const [activeIndex, setActiveIndex] = useState(null);
+   const [activeIndex, setActiveIndex] = useState(0);
 
    const toggleAccordion = (index) => {
       setActiveIndex(activeIndex === index ? null : index);
